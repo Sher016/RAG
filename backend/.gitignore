@@ -1,0 +1,22 @@
+# Entornos virtuales
+venv/
+.env
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.db
+*.sqlite3
+*.log
+
+.DS_Store
+Thumbs.db
+
+*.egg-info/
+.eggs/
+
+build/
+dist/
+
+.vscode/
+.idea/
