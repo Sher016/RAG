@@ -1,6 +1,6 @@
 documentation > https://docs.langchain.com/oss/python/langchain/rag 
 
-# 📄 Proyecto RAG con Arquitectura Hexagonal
+# 📄 Proyecto RAG 
 
 Este proyecto implementa un sistema **RAG (Retrieval-Augmented Generation)** en Python
 
@@ -11,7 +11,6 @@ Este proyecto implementa un sistema **RAG (Retrieval-Augmented Generation)** en 
 - Fragmentación de texto con `RecursiveCharacterTextSplitter`.
 - Almacenamiento vectorial con FAISS y embeddings de Ollama.
 - Recuperación de contexto y generación de respuestas con LLM.
-- Arquitectura hexagonal con puertos y adaptadores.
 
 ---
 
