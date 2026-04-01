@@ -7,3 +7,6 @@ langchain-text-splitters
 faiss-cpu
 langchain-ollama
 langchain-openai
+transformers
+torch 
+huggingface_hub

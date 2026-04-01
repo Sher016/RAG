@@ -1,6 +1,7 @@
 from langchain_core.prompts import PromptTemplate 
 #from langchain_ollama import OllamaLLM 
 from langchain_openai import OpenAI
+from langchain_openai import ChatOpenAI, OpenAIEmbeddings
 from infrastructure.adapters.pdf_loader import PdfLoaderAdapter 
 from infrastructure.adapters.chunker import ChunkerAdapter  
 from infrastructure.adapters.vector_store import VectorStoreAdapter 
@@ -14,9 +15,11 @@ class RAG:
         Contexto de la respuesta: {answer_context} 
         """
         self.prompt = PromptTemplate.from_template(self.instructor_prompt) 
-        #self.llm = OllamaLLM(model="llama3.2:3b") 
-        self.llm = OpenAI(model="gpt-4.1") 
-        self.vectorStore = VectorStoreAdapter() 
+        #self.llm = OllamaLLM(model="llama3.2:3b") #usando ollama de forma local
+        self.llm = ChatOpenAI(model="gpt-4.1") 
+        # self.vectorStore = VectorStoreAdapter() #generados anteriormente con ollama en cada llamado
+        embeddings = OpenAIEmbeddings(model="text-embedding-3-small")
+        self.vectorStore = VectorStoreAdapter(embeddings=embeddings)
         self.pdfloader = PdfLoaderAdapter() 
         self.chunker = ChunkerAdapter() 
 
