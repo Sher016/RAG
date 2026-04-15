@@ -1,5 +1,6 @@
 import type { AppRouteObject } from "../../types/routerTypes";
 import { RootLayout } from "../../shared/Layout/RootLayout";
+import GenreLayout from "./components/GenreLayout";
 import ChatBook from "./pages/ChatBook";
 import { FaBookOpen } from "react-icons/fa";
 
@@ -15,7 +16,7 @@ export const chatBookRoutes: AppRouteObject[] = [
     children: [
       {
         index: true,
-        element: <ChatBook />,
+        // element: <ChatBook/>,
       },
     ],
   },

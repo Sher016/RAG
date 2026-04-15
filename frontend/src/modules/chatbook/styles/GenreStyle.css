@@ -1,0 +1,41 @@
+
+.genre-layout {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  position: relative;
+}
+
+.genre-background-fantasia {
+  background: linear-gradient(to bottom, black, #4c1d95, #251341);
+}
+
+.genre-image {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-height: 150%;
+  max-width: 150%;
+  width: auto;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.genre-left {
+  left: 0;
+}
+
+.genre-right {
+  right: 0;
+}
+
+.chat-container {
+  position: relative;
+  z-index: 10;
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

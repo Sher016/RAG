@@ -14,12 +14,18 @@
   --social-bg: rgba(244, 243, 236, 0.5);
   --shadow:
     rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
-
+  --color-primary: #D6BAFF;              /* Moonlight highlight */
+  --color-primary-container: #2D0B5A;    /* Royal Shadow */
+  --color-tertiary: #FFB5A0;             /* Fiery Ember */
+  --color-tertiary-container: #450C00;   /* Ember base */
+  --color-surface-lowest: #0E0E0E;       /* Obsidian Base */
+  --color-on-surface: #E5E2E1;           /* Text color (never pure white) */
+  --color-outline-variant: rgba(229, 226, 225, 0.15); /* Ghost border */
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
   --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
   --mono: ui-monospace, Consolas, monospace;
 
-  font: 18px/145% var(--sans);
+  /* font: 18px/145% var(--sans); */
   letter-spacing: 0.18px;
   color-scheme: light dark;
   color: var(--text);
@@ -57,20 +63,20 @@
 #root {
   width: 1126px;
   max-width: 100%;
-  margin: 0 auto;
   text-align: center;
-  border-inline: 1px solid var(--border);
+  /* border-inline: 1px solid var(--border); */
   min-height: 100svh;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
+  padding: 25px;
 }
 
 body {
   margin: 0;
 }
 
-h1,
+/* h1,
 h2 {
   font-family: var(--heading);
   font-weight: 500;
@@ -97,7 +103,7 @@ h2 {
 }
 p {
   margin: 0;
-}
+} */
 
 code,
 .counter {

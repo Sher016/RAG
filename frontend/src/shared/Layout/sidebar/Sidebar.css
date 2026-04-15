@@ -1,0 +1,16 @@
+
+.sidebar-icon {
+  width: 58px;          
+  height: 48px;
+  border-radius: 50%;   
+  overflow: hidden;    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; 
+}
